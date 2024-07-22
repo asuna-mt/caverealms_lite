@@ -1,3 +1,5 @@
+-- Cavrealms plants and trees for lichen, moss and algae biomes
+
 -- Lichen biome
 
 -- glowing fungi
@@ -7,7 +9,7 @@ minetest.register_node("caverealms:fungus", {
 	inventory_image = "caverealms_fungi.png",
 	wield_image = "caverealms_fungi.png",
 	is_ground_content = true,
-	groups = {oddly_breakable_by_hand = 3, attached_node = 1},
+	groups = {oddly_breakable_by_hand = 3, attached_node = 1, flammable = 1},
 	light_source = 5,
 	paramtype = "light",
 	drawtype = "plantlike",
@@ -27,7 +29,7 @@ minetest.register_node("caverealms:mycena", {
 	inventory_image = "caverealms_mycena.png",
 	wield_image = "caverealms_mycena.png",
 	is_ground_content = true,
-	groups = {oddly_breakable_by_hand = 3, attached_node = 1},
+	groups = {oddly_breakable_by_hand = 3, attached_node = 1, flammable = 1},
 	light_source = 6,
 	paramtype = "light",
 	drawtype = "plantlike",
@@ -92,6 +94,7 @@ minetest.register_node("caverealms:mushroom_gills", {
 	tiles = {"caverealms_mushroom_gills.png"},
 	is_ground_content = true,
 	light_source = 10,
+	walkable = false,
 	groups = {choppy=2, oddly_breakable_by_hand=1},
 	drawtype = "plantlike",
 	paramtype = "light",

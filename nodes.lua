@@ -1,3 +1,7 @@
+-- CaveRealms nodes.lua
+
+--NODES--
+
 --glowing crystal
 minetest.register_node("caverealms:glow_crystal", {
 	description = "Glow Sapphire",
@@ -221,7 +225,7 @@ minetest.register_node("caverealms:icicle_up", {
 	visual_scale = 1.0,
 	selection_box = {
 		type = "fixed",
-		fixed = {-0.5, -0.5, -0.5, 0.5, -7/16, 0.5},
+		fixed = {-0.5, -0.5, -0.5, 0.5, -5/16, 0.5},
 	},
 })
 
@@ -242,7 +246,7 @@ minetest.register_node("caverealms:icicle_down", {
 	visual_scale = 1.0,
 	selection_box = {
 		type = "fixed",
-		fixed = {-0.5, 7/16, -0.5, 0.5, 0.5, 0.5},
+		fixed = {-0.5, -0.5, -0.5, 0.5, -5/16, 0.5},
 	},
 })
 
@@ -301,7 +305,7 @@ minetest.register_node("caverealms:hot_cobble", {
 	description = "Hot Cobble",
 	tiles = {"caverealms_hot_cobble.png"},
 	is_ground_content = true,
-	groups = {cracky=1, hot=1, unbreakable = 1},
+	groups = {cracky=1, hot=1, unbreakable = 1, stone = 1},
 	damage_per_second = 1,
 	light_source = 3,
 	paramtype = "light",
@@ -468,6 +472,7 @@ minetest.register_node("caverealms:constant_flame", {
 	drop = '',
 	walkable = false,
 	buildable_to = true,
+	floodable = true,
 	damage_per_second = 4,
 })
 
