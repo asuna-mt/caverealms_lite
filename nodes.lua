@@ -309,9 +309,7 @@ minetest.register_node("caverealms:hot_cobble", {
 	damage_per_second = 1,
 	light_source = 3,
 	paramtype = "light",
-	sounds = default.node_sound_stone_defaults({
-		footstep = {name="default_stone_footstep", gain=0.25},
-	}),
+	sounds = default.node_sound_stone_defaults(),
 })
 
 --Glow Obsidian
@@ -322,9 +320,7 @@ minetest.register_node("caverealms:glow_obsidian", {
 	groups = {cracky=1, level=2},
 	light_source = 7,
 	paramtype = "light",
-	sounds = default.node_sound_stone_defaults({
-		footstep = {name="default_stone_footstep", gain=0.25},
-	}),
+	sounds = default.node_sound_stone_defaults(),
 })
 
 --Glow Obsidian 2 - has traces of lava
@@ -335,9 +331,7 @@ minetest.register_node("caverealms:glow_obsidian_2", {
 	groups = {cracky=1, hot=1, level=2},
 	light_source = 9,
 	paramtype = "light",
-	sounds = default.node_sound_stone_defaults({
-		footstep = {name="default_stone_footstep", gain=0.25},
-	}),
+	sounds = default.node_sound_stone_defaults(),
 })
 
 --Glow Obsidian Bricks
